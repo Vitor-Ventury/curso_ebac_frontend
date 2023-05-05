@@ -40,8 +40,6 @@ header h1 {
 
 .articles article a {
     text-decoration: none;
-    color: white;
-    background-color: blue;
     padding: 8px;
     display: inline-block;
     margin-top: 12px;
@@ -63,16 +61,40 @@ header a {
     background-color: lightgreen;
 }
 
+#sports article a{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
 #economy {
     background-color: gold;
+}
+
+#economy article a{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
 }
 
 #entertainment {
     background-color: #ff261b;
 }
 
+#entertainment article a{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
 #technology {
     background-color: lightskyblue;
+}
+
+#technology article a{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
 }
 
 section h2 {
