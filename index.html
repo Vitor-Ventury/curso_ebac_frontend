@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Formulário</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="form_id">
+                <h2>Número A</h2>
+                <input type="number" id="first_value" placeholder="Digite um número" required>
+                <h2>Número B</h2>
+                <input type="number" id="second_value" placeholder="Digite outro número" required>
+                <button type="submit" id="btn_send">Enviar</button>
+            </form>
+            <p id="success_message">Formulário validado com sucesso</p>
+            <p id="error_message">O número B deve ser maior que o número A</p>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
