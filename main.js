@@ -7,12 +7,15 @@ form.addEventListener('submit', function(e){
     const firstValue = document.getElementById('first_value');
     const secondValue = document.getElementById('second_value');
 
-    firstValue.addEventListener('change', function(){
+    firstValue.addEventListener('keyup', function(){
+        document.getElementById('btn_send').disabled = false
+    })
+    secondValue.addEventListener('keyup', function(){
         document.getElementById('btn_send').disabled = false
     })
     
 
-    if (secondValue.value > firstValue.value) {
+    if (parseInt(secondValue.value) > parseInt(firstValue.value)) {
         document.getElementById('success_message').style.display='block';
         document.getElementById('error_message').style.display='none';
         document.getElementById('first_value').style.border=''
