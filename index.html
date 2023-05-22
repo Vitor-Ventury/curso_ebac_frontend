@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&family=Poppins&display=swap" rel="stylesheet">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lista de Tarefas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="todo_form">
+                <input id="task_value" type="text" placeholder="Nome da tarefa" required>
+                <div class="select">
+                    <p>Turno</p>
+                    <select id="time_task" name="time" required>
+                        <option value="morning">Manhã</option>
+                        <option value="afternoon">Tarde</option>
+                        <option value="night">Noite</option>
+                    </select>
+                </div> 
+                <button type="submit">Cadastrar</button>
+            </form>
+            <ul id="todo_list">
+                <h2 id="morning">Manhã</h2>
+                <h2 id="afternoon">Tarde</h2>
+                <h2 id="night">Noite</h2>
+            </ul>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
